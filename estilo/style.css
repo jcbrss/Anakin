@@ -43,15 +43,17 @@ header > p {
     color: var(--cor3);
 }
 
-    nav {
-        background-color: var(--cor1);
-        padding: 10px;
-        margin-bottom: 20px; /* Adiciona um espaçamento entre nav e main */
-        display: flex;
+nav {
+    background-color: var(--cor1);
+    padding: 10px;
+    margin-bottom: 20px; /* Adiciona um espaçamento entre nav e main */
+    display: flex;
     justify-content: center; /* Centraliza os links horizontalmente */
     gap: 15px;
+    flex-wrap: wrap; /* Permite que os links quebrem para a linha seguinte se necessário */
+    overflow-x: auto; /* Adiciona rolagem horizontal se os itens não caberem */
+}
 
-    }
     
 
 nav > a {
